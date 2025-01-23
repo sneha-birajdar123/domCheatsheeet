@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <a target="_blank" id="atag">Google</a>
+
+    <form action="" id="formId">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name">
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+        <br><br>
+        <label for="phone">Phone:</label>
+        <input type="phone" name="phone" id="phone">
+        <br><br>
+        <button id="submit" type="submit">Submit</button>
+    </form>
+    
+</body>
+<script>
+
+    // let atag = document.getElementById("atag")
+    // atag.addEventListener("click", (event) => {
+    //     console.log("clicked");
+    //     event.preventDefault()
+    // })
+
+
+    let formId = document.getElementById("formId")
+
+    formId.addEventListener("submit", (event)=>{
+        event.preventDefault()
+
+        let name = document.getElementById("name").value;
+        let email = document.getElementById("email").value;
+        let phone = document.getElementById("phone").value;
+
+        console.log(name, email, phone);
+        
+    })
+
+
+
+
+
+
+
+</script>
+</html>

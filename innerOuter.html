@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h1 id="h1">hello world</h1>
+<h2 id="h2">this is h2 tag</h2>
+    
+</body>
+
+<script>
+
+    // innerHTML and outerHTML :
+
+    // innerHTML ==> to get and set
+
+    let h1 = document.getElementById("h1")
+    console.log(h1.innerHTML);
+    h1.innerHTML = "sneha";
+    console.log(h1.innerHTML);         // used to change the content
+
+
+    // outerHTML ==> 
+
+    let h2 = document.getElementById("h2")
+    console.log(h2);
+    
+    console.log(h2.outerHTML);
+    
+    h2.outerHTML = "<p>this is p tag</p>"       // used to change the tag
+    console.log(h2);
+    
+
+
+</script>
+</html>

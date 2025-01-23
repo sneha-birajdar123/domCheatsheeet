@@ -1,0 +1,89 @@
+DOM : Document Object Model
+
+. DOM is an application programming interface for manipulating HTML documents.
+. To add, remove, and modify parts of the document html.
+. When a web page is loaded the browser creates a document object model of the page.
+
+ NOTE: In document DOM tree the document is the root node at object 
+
+ . With the object model, JS gets all the power it needs to create dynamic HTML.
+ . JS can change all the html elements in the page.
+ . JS can change all the html attributes and styles in the page.
+ . JS can add or remove html elements.
+ . js can create new html events in the page.
+ 
+ NOTE: In the DOM, all the HTML elements are defined as objects, so it will have all property and method.
+
+ . The document object represents your web page.
+ . If you want to access any element in the html page you should always start with accessing the document object.
+
+
+
+ 1. getElementById :
+
+ <p id="ptag">This is a P tag </p>
+
+ let pTag = document.getElementById("ptag")
+ console.log(pTag)         // output:   <p id="ptag">This is a P tag </p>
+
+
+
+
+2. getElementByClassNames :
+
+<div class="box">box 1</div>
+<div class="box">box 2</div>
+
+for(let i = 0; i <= boxVar.length-1; i++){
+    console.log(boxVar[1]); 
+}
+
+
+
+
+3. getElementByTagName :
+
+ <h3>hiiiii</h3>
+    <h3>hloooooo</h3>
+    <h3>byeeeeeeeeeeeeee</h3>
+
+     let h3 = document.getElementsByTagName("h3")
+    console.log(h3);
+
+    for(let k=0; k <= h3.length-1; k++){
+        console.log(h3[k]);
+    }
+
+
+
+
+4. querySelector and querySelectorAll :
+
+
+<p class="box">hello 1</p>
+<p class="box">hello 2</p>
+<p class="box">hello 3</p>0
+
+let pbox = document.querySelector("p.box")                 // the querySelector gives the first p tag
+    console.log(pbox);
+
+let pboxloop = document.querySelectorAll("p.box")       // here the querySelectorAll gives all the p tags in the output
+    for(let i of pboxloop){
+        console.log(i);
+    }
+
+
+DOM Events: 
+
+. DOM events are actions that occur as a result of the user action or a result of state change of the element
+  of a DOM tree
+
+EXAMPLE :
+
+. when a mouse button click
+. when a web page is loaded
+. when an image is loaded
+. when mouseover event an element
+. when an input field changes
+. when a html form is submitted
+. when a user strokes a key

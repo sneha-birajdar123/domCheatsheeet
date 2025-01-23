@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<p class="box">hello 1</p>
+<p class="box">hello 2</p>
+<p class="box">hello 3</p>
+    
+</body>
+
+<script>
+
+    let pbox = document.querySelector("p.box")
+    console.log(pbox);
+
+    let pboxloop = document.querySelectorAll("p.box")
+
+    for(let i of pboxloop){
+        console.log(i);
+    }
+    
+
+</script>
+</html>
